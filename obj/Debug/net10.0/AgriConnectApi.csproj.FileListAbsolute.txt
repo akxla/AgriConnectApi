@@ -1,8 +1,0 @@
-D:\Akila l\ICBT\Assignment\09. Service Oriented Computing\Project\AgriConnectApi\obj\Debug\net10.0\AgriConnectApi.csproj.AssemblyReference.cache
-D:\Akila l\ICBT\Assignment\09. Service Oriented Computing\Project\AgriConnectApi\obj\Debug\net10.0\rpswa.dswa.cache.json
-D:\Akila l\ICBT\Assignment\09. Service Oriented Computing\Project\AgriConnectApi\obj\Debug\net10.0\AgriConnectApi.GeneratedMSBuildEditorConfig.editorconfig
-D:\Akila l\ICBT\Assignment\09. Service Oriented Computing\Project\AgriConnectApi\obj\Debug\net10.0\AgriConnectApi.AssemblyInfoInputs.cache
-D:\Akila l\ICBT\Assignment\09. Service Oriented Computing\Project\AgriConnectApi\obj\Debug\net10.0\AgriConnectApi.AssemblyInfo.cs
-D:\Akila l\ICBT\Assignment\09. Service Oriented Computing\Project\AgriConnectApi\obj\Debug\net10.0\AgriConnectApi.csproj.CoreCompileInputs.cache
-D:\Akila l\ICBT\Assignment\09. Service Oriented Computing\Project\AgriConnectApi\obj\Debug\net10.0\AgriConnectApi.MvcApplicationPartsAssemblyInfo.cs
-D:\Akila l\ICBT\Assignment\09. Service Oriented Computing\Project\AgriConnectApi\obj\Debug\net10.0\AgriConnectApi.MvcApplicationPartsAssemblyInfo.cache
