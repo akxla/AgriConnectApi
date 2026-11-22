@@ -13,5 +13,8 @@ namespace AgriConnectApi.Data
 
         public DbSet<AgricultureOfficer> AgricultureOfficers
             => Set<AgricultureOfficer>();
+
+        public DbSet<Recommendation> Recommendations
+    => Set<Recommendation>();
     }
 }
