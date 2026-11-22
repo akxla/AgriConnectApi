@@ -3238,31 +3238,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Akila\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\HP 650 G8\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Akila l\\ICBT\\Assignment\\09. Service Oriented Computing\\Project\\AgriConnectApi\\AgriConnectApi.csproj",
+      "projectUniqueName": "C:\\Users\\HP 650 G8\\Documents\\AgriConnectApi\\AgriConnectApi.csproj",
       "projectName": "AgriConnectApi",
-      "projectPath": "D:\\Akila l\\ICBT\\Assignment\\09. Service Oriented Computing\\Project\\AgriConnectApi\\AgriConnectApi.csproj",
-      "packagesPath": "C:\\Users\\Akila\\.nuget\\packages\\",
-      "outputPath": "D:\\Akila l\\ICBT\\Assignment\\09. Service Oriented Computing\\Project\\AgriConnectApi\\obj\\",
+      "projectPath": "C:\\Users\\HP 650 G8\\Documents\\AgriConnectApi\\AgriConnectApi.csproj",
+      "packagesPath": "C:\\Users\\HP 650 G8\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HP 650 G8\\Documents\\AgriConnectApi\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Akila\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\HP 650 G8\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3337,7 +3330,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
