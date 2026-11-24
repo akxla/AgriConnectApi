@@ -1,7 +1,7 @@
 
-using System.Threading.Tasks;
 using AgriConnectApi.DTOs.QuotationVerification;
 using AgriConnectApi.IServices;
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -26,8 +26,7 @@ namespace AgriConnectApi.Controllers
         {
             return StatusCode(501, new
             {
-                message = "Pending quotation retrieval requires the " +
-                          "Supplier Quotation module."
+                message = "Pending quotation retrieval is not yet implemented."
             });
         }
 
@@ -45,26 +44,24 @@ namespace AgriConnectApi.Controllers
                 });
             }
 
-            string? error = _service.ValidateDecision(dto);
+            var validationError = _service.ValidateDecision(dto);
 
-            if (error != null)
+            if (validationError != null)
             {
                 return BadRequest(new
                 {
-                    message = error
+                    message = validationError
                 });
             }
 
-            // Do not claim the quotation was approved/rejected yet.
-            // Database integration will be added after
-            // Member 2 completes the Quotation entity.
+            // This does not update any quotation yet.
+            // Actual database integration comes later.
 
             return StatusCode(501, new
             {
-                message = "Decision validated, but quotation " +
-                          "verification is not yet implemented.",
-                quotationId,
-                decision = dto.Decision
+                message = "Verification input is valid, but saving " +
+                          "the decision is not yet implemented.",
+                quotationId
             });
         }
     }
