@@ -19,6 +19,10 @@ builder.Services.AddScoped<
     IOfficerDashboardService,
     OfficerDashboardService>();
 
+builder.Services.AddScoped<
+    IQuotationVerificationService,
+    QuotationVerificationService>();
+
 var app = builder.Build();
 
 app.UseAuthentication();
