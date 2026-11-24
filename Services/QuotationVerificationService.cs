@@ -17,13 +17,13 @@ namespace AgriConnectApi.Services
             if (dto.Decision != "Approved" &&
                 dto.Decision != "Rejected")
             {
-                return "Invalid verification decision.";
+                return "Decision must be Approved or Rejected.";
             }
 
             if (dto.Decision == "Rejected" &&
                 string.IsNullOrWhiteSpace(dto.Remarks))
             {
-                return "Remarks are required when rejecting a quotation.";
+                return "A rejection reason is required.";
             }
 
             return null;
