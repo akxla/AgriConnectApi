@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - AgriConnect</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/officer.css">
+</head>
+<body>
+
+<div class="app-layout">
+    <nav class="sidebar" id="sidebar"
+         aria-label="Officer navigation"></nav>
+
+    <div class="main-area">
+        <header class="topbar">
+            <h1 id="page-title">My Profile</h1>
+            <span>Agriculture Officer</span>
+        </header>
+
+        <main class="page-content">
+            <div id="message" class="message" hidden></div>
+
+            <section class="card">
+                <h2>Officer Information</h2>
+
+                <p>
+                    <strong>Officer ID:</strong>
+                    <span id="officer-id">—</span>
+                </p>
+
+                <p>
+                    <strong>Employee Number:</strong>
+                    <span id="employee-number">—</span>
+                </p>
+
+                <form id="profile-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name"
+                                   required maxlength="150">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="specialization">
+                                Specialization
+                            </label>
+                            <input type="text" id="specialization">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="district">District</label>
+                            <input type="text" id="district">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="office">Office</label>
+                            <input type="text" id="office">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-number">
+                                Contact Number
+                            </label>
+                            <input type="tel" id="contact-number">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn"
+                            id="save-profile" disabled>
+                        Save Changes
+                    </button>
+                </form>
+            </section>
+        </main>
+    </div>
+</div>
+
+<script src="../js/api.js"></script>
+<script src="../js/layout.js"></script>
+<script src="../js/officer-profile.js"></script>
+</body>
+</html>
