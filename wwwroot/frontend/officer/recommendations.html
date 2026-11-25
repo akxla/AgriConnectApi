@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations - AgriConnect</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/officer.css">
+</head>
+<body>
+
+<div class="app-layout">
+    <nav class="sidebar" id="sidebar"
+         aria-label="Officer navigation"></nav>
+
+    <div class="main-area">
+        <header class="topbar">
+            <h1 id="page-title">Recommendations</h1>
+            <span>Agriculture Officer</span>
+        </header>
+
+        <main class="page-content">
+            <div id="message" class="message" hidden></div>
+
+            <section class="card">
+                <h2 id="form-title">Create Recommendation</h2>
+
+                <form id="recommendation-form">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" id="title"
+                               maxlength="150" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" required></textarea>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <input type="text" id="category"
+                                   maxlength="50">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="status">Status</label>
+                            <select id="status">
+                                <option value="Draft">Draft</option>
+                                <option value="Published">
+                                    Published
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <button type="submit" class="btn"
+                                id="save-recommendation">
+                            Save Recommendation
+                        </button>
+
+                        <button type="button"
+                                class="btn btn-secondary"
+                                id="cancel-edit" hidden>
+                            Cancel Edit
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="card">
+                <div class="section-heading">
+                    <h2>My Recommendations</h2>
+                    <button type="button"
+                            class="btn btn-secondary"
+                            id="refresh-recommendations">
+                        Refresh
+                    </button>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Category</th>
+                                <th>Status</th>
+                                <th>Created</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="recommendations-list">
+                            <tr>
+                                <td colspan="5">
+                                    Loading recommendations...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+
+<script src="../js/api.js"></script>
+<script src="../js/layout.js"></script>
+<script src="../js/recommendations.js"></script>
+</body>
+</html>
