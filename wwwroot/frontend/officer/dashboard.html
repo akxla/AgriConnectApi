@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Officer Dashboard - AgriConnect</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/officer.css">
+</head>
+<body>
+
+<div class="app-layout">
+    <nav class="sidebar" id="sidebar"
+         aria-label="Officer navigation"></nav>
+
+    <div class="main-area">
+        <header class="topbar">
+            <h1 id="page-title">Officer Dashboard</h1>
+            <span>Agriculture Officer</span>
+        </header>
+
+        <main class="page-content">
+            <div id="message" class="message" hidden></div>
+
+            <section class="card">
+                <h2 id="welcome">Welcome, Agriculture Officer</h2>
+                <p id="officer-info" class="muted">
+                    Officer information will appear here.
+                </p>
+            </section>
+
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Recommendations</h3>
+                    <p id="total-recommendations">—</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Published</h3>
+                    <p id="published-recommendations">—</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Drafts</h3>
+                    <p id="draft-recommendations">—</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Archived</h3>
+                    <p id="archived-recommendations">—</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="section-heading">
+                    <h2>Recent Recommendations</h2>
+                    <a class="btn" href="recommendations.html">
+                        Manage Recommendations
+                    </a>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Category</th>
+                                <th>Status</th>
+                                <th>Created Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="recent-recommendations">
+                            <tr>
+                                <td colspan="4">Loading...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Pending Reviews and Verifications</h2>
+                <p class="muted">
+                    Supply request and quotation statistics
+                    will be available after backend integration.
+                </p>
+                <div class="actions">
+                    <a class="btn btn-secondary" href="requests.html">
+                        Supply Requests
+                    </a>
+                    <a class="btn btn-secondary" href="quotations.html">
+                        Quotations
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+
+<script src="../js/api.js"></script>
+<script src="../js/layout.js"></script>
+<script src="../js/officer-dashboard.js"></script>
+</body>
+</html>
