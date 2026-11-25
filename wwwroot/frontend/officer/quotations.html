@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotation Verification - AgriConnect</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/officer.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+    <nav class="sidebar" id="sidebar"
+         aria-label="Officer navigation"></nav>
+
+    <div class="main-area">
+
+        <header class="topbar">
+            <h1 id="page-title">Quotation Verification</h1>
+            <span>Agriculture Officer</span>
+        </header>
+
+        <main class="page-content">
+
+            <div id="message" class="message" hidden></div>
+
+            <section class="card">
+                <div class="section-heading">
+                    <h2>Pending Quotations</h2>
+
+                    <button type="button"
+                            class="btn btn-secondary"
+                            id="refresh-quotations">
+                        Refresh
+                    </button>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Quotation ID</th>
+                                <th>Verification Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="quotations-list">
+                            <tr>
+                                <td colspan="3">
+                                    Loading quotations...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Verify Quotation</h2>
+
+                <p id="selected-quotation" class="muted">
+                    Select a quotation from the table.
+                </p>
+
+                <form id="verification-form">
+
+                    <div class="form-group">
+                        <label for="verification-decision">
+                            Verification Decision
+                        </label>
+
+                        <select id="verification-decision" required>
+                            <option value="">Select decision</option>
+                            <option value="Approved">Approved</option>
+                            <option value="Rejected">Rejected</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="verification-remarks">
+                            Remarks
+                        </label>
+
+                        <textarea id="verification-remarks"
+                                  maxlength="500"
+                                  placeholder="Enter verification remarks"></textarea>
+                    </div>
+
+                    <button type="submit"
+                            class="btn"
+                            id="verify-button"
+                            disabled>
+                        Submit Verification
+                    </button>
+                </form>
+
+                <p class="muted">
+                    Verification submission will be enabled
+                    after Supplier Quotation API integration.
+                </p>
+            </section>
+
+        </main>
+    </div>
+</div>
+
+<script src="../js/api.js"></script>
+<script src="../js/layout.js"></script>
+<script src="../js/quotations.js"></script>
+
+</body>
+</html>
