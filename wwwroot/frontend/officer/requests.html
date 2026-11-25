@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Request Review - AgriConnect</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/officer.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+    <nav class="sidebar" id="sidebar"
+         aria-label="Officer navigation"></nav>
+
+    <div class="main-area">
+
+        <header class="topbar">
+            <h1 id="page-title">Supply Request Review</h1>
+            <span>Agriculture Officer</span>
+        </header>
+
+        <main class="page-content">
+
+            <div id="message" class="message" hidden></div>
+
+            <section class="card">
+
+                <div class="section-heading">
+                    <h2>Pending Supply Requests</h2>
+
+                    <button type="button"
+                            class="btn btn-secondary"
+                            id="refresh-requests">
+                        Refresh
+                    </button>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Request ID</th>
+                                <th>Farmer ID</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="requests-list">
+                            <tr>
+                                <td colspan="4">
+                                    Loading requests...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+
+            <section class="card">
+                <h2>Review Supply Request</h2>
+
+                <p id="selected-request" class="muted">
+                    Select a supply request from the table.
+                </p>
+
+                <div class="card">
+                    <h2>Request Details</h2>
+
+                    <p id="request-details" class="muted">
+                        Product and quantity details will
+                        appear after backend integration.
+                    </p>
+                </div>
+
+                <form id="review-form">
+
+                    <div class="form-group">
+                        <label for="review-decision">
+                            Review Decision
+                        </label>
+
+                        <select id="review-decision" required>
+                            <option value="">Select decision</option>
+                            <option value="Approved">Approved</option>
+                            <option value="Rejected">Rejected</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="review-remarks">
+                            Remarks
+                        </label>
+
+                        <textarea id="review-remarks"
+                                  maxlength="500"
+                                  placeholder="Enter a reason when rejecting"></textarea>
+                    </div>
+
+                    <button type="submit"
+                            class="btn"
+                            id="submit-review"
+                            disabled>
+                        Submit Review
+                    </button>
+                </form>
+
+                <p class="muted">
+                    Review submission will become available
+                    after the Farmer Supply Request API is integrated.
+                </p>
+            </section>
+
+        </main>
+    </div>
+</div>
+
+<script src="../js/api.js"></script>
+<script src="../js/layout.js"></script>
+<script src="../js/supply-requests.js"></script>
+
+</body>
+</html>
