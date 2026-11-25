@@ -1,0 +1,230 @@
+
+/* AgriConnect — Shared Frontend Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7f5;
+    color: #26332b;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Main page structure */
+
+.app-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 230px;
+    flex-shrink: 0;
+    background-color: #20653b;
+    color: white;
+    padding: 20px 14px;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    margin: 10px 8px 30px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background-color: #348653;
+}
+
+.main-area {
+    flex: 1;
+    min-width: 0;
+}
+
+.topbar {
+    background-color: white;
+    padding: 20px 30px;
+    border-bottom: 1px solid #e1e6e1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.topbar h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.page-content {
+    padding: 25px 30px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #e0e6e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.btn {
+    background-color: #247446;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 16px;
+}
+
+.btn:hover:not(:disabled) {
+    background-color: #195b35;
+}
+
+.btn-secondary {
+    background-color: #e8efe9;
+    color: #245c38;
+}
+
+.btn-danger {
+    background-color: #b64040;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cdd7ce;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e1e6e1;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #f0f5f0;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 12px;
+    background-color: #e8f2ea;
+    border-radius: 5px;
+    color: #245c38;
+}
+
+.message.error {
+    background-color: #fdeaea;
+    color: #9b2929;
+}
+
+.muted {
+    color: #68756c;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.empty-state {
+    color: #68756c;
+    padding: 15px 0;
+}
+
+/* Responsive layout */
+
+@media (max-width: 750px) {
+    .app-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar a {
+        display: inline-block;
+    }
+
+    .topbar,
+    .page-content {
+        padding: 18px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
