@@ -23,7 +23,21 @@ builder.Services.AddScoped<
     IQuotationVerificationService,
     QuotationVerificationService>();
 
+    builder.Services.AddScoped<
+    ISupplyRequestReviewService,
+    SupplyRequestReviewService>();
+
+    builder.Services.AddScoped<
+    IAdminOfficerDirectoryService,
+    AdminOfficerDirectoryService>();
+
+    builder.Services.AddScoped<
+    IAdminOfficerDirectoryService,
+    AdminOfficerDirectoryService>();
+
 var app = builder.Build();
+
+app.UseStaticFiles();
 
 app.UseAuthentication();
 app.UseAuthorization();
