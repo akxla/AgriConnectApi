@@ -31,6 +31,11 @@ builder.Services.AddScoped<
     IAdminOfficerDirectoryService,
     AdminOfficerDirectoryService>();
 
+    builder.Services.AddScoped<
+    IAdminOfficerManagementService,
+    AdminOfficerManagementService>();
+
+
 
 var app = builder.Build();
 
